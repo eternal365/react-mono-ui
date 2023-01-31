@@ -2,7 +2,9 @@ import { createContext, FC, ReactNode } from 'react';
 
 import 'styles/index.scss';
 
-type ContextValue = {};
+type ContextValue = {
+  //
+};
 
 type ProviderProps = {
   children: ReactNode;
