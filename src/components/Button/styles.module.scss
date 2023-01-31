@@ -1,0 +1,24 @@
+@import "styles/shared";
+
+.root {
+  max-width: 100%;
+  height: 48px;
+  background: $color-dark;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: $color-light;
+  border: $border;
+  border-radius: $border-radius;
+  padding-right: $container-padding;
+  padding-left: $container-padding;
+  overflow: hidden;
+
+  &:focus {
+    outline: $border;
+  }
+}
+
+.root_outlined {
+  background-color: transparent;
+  color: $color-dark;
+}

@@ -1,0 +1,9 @@
+@import "styles/shared";
+
+.root {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $container-padding;
+  padding-left: $container-padding;
+}

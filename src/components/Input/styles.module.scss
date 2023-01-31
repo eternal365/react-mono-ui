@@ -1,0 +1,14 @@
+@import "styles/shared";
+
+.root {
+  width: 100%;
+  min-height: 48px;
+  border: $border;
+  border-radius: $border-radius;
+  padding-right: $container-padding;
+  padding-left: $container-padding;
+
+  &:focus {
+    outline: $border;
+  }
+}

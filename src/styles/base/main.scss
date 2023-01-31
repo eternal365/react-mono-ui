@@ -1,0 +1,66 @@
+@import "styles/shared";
+
+html,
+body {
+  background: $color-light;
+  font-family: monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1em;
+  vertical-align: baseline;
+  color: $color-dark;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+img {
+  text-indent: 0.5em;
+  color: $color-dark;
+}
+
+sup {
+  font-size: 0.8em;
+  line-height: 1em;
+  vertical-align: super;
+}
+
+sub {
+  font-size: 0.8em;
+  line-height: 1em;
+  vertical-align: sub;
+}
+
+::-moz-selection {
+  background: $color-dark;
+  color: $color-light;
+}
+
+::selection {
+  background: $color-dark;
+  color: $color-light;
+}
+
+::-webkit-input-placeholder {
+  color: $color-dark;
+}
+
+::-moz-placeholder {
+  color: $color-dark;
+}
+
+:-moz-placeholder {
+  color: $color-dark;
+}
+
+:-ms-input-placeholder {
+  color: $color-dark;
+}

@@ -1,0 +1,37 @@
+@import "styles/shared";
+
+.root {
+  height: 64px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  background: $color-light;
+  border-bottom: $border;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+.link {
+  font-size: 2em;
+  line-height: 1em;
+  color: $color-dark;
+  border-radius: $border-radius;
+  margin-right: -$container-padding;
+  margin-left: -$container-padding;
+  padding-right: $container-padding;
+  padding-left: $container-padding;
+
+  &:focus {
+    outline: $border;
+  }
+}
