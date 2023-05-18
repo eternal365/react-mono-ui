@@ -15,3 +15,4 @@ This project is a component library for React.
 - Textarea
 - Select
 - Checkbox
+- Radio

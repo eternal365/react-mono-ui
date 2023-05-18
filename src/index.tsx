@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import { Button, Checkbox, Container, Header, Heading, Input, Section, Select, TextArea } from 'components';
+import { Button, Checkbox, Container, Header, Heading, Input, Radio, Section, Select, TextArea } from 'components';
 import { Ui } from 'contexts';
 
 const root = ReactDOM.createRoot(
@@ -33,6 +33,9 @@ root.render(
           <Checkbox>checkbox #1</Checkbox>
           <Checkbox>checkbox #2</Checkbox>
           <Checkbox>checkbox #3</Checkbox>
+          <Radio name="radio">radio #1</Radio>
+          <Radio name="radio">radio #2</Radio>
+          <Radio name="radio">radio #3</Radio>
           <Button>button example</Button>
           <Button outlined>outlined button example</Button>
         </Container>

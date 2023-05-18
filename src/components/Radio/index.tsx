@@ -4,9 +4,9 @@ import { v4 as uuid } from 'uuid';
 
 import styles from './styles.module.scss';
 
-type CheckboxProps = Omit<ComponentPropsWithoutRef<'input'>, 'type'>;
+type RadioProps = Omit<ComponentPropsWithoutRef<'input'>, 'type'>;
 
-const Checkbox: FC<CheckboxProps> = ({
+const Radio: FC<RadioProps> = ({
   className,
   id,
   children,
@@ -18,7 +18,7 @@ const Checkbox: FC<CheckboxProps> = ({
     <div className={cx(styles.root, className)}>
       <input
         className={styles.input}
-        type="checkbox"
+        type="radio"
         id={key}
         {...props}
       />
@@ -27,4 +27,4 @@ const Checkbox: FC<CheckboxProps> = ({
   );
 };
 
-export default Checkbox;
+export default Radio;
