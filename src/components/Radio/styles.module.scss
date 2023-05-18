@@ -2,10 +2,6 @@
 
 .root {
   position: relative;
-
-  & + & {
-    margin-top: $container-padding / 2;
-  }
 }
 
 .input {

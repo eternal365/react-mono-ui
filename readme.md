@@ -4,15 +4,22 @@ This project is a component library for React.
 
 ### Components
 
+###### Layout
+
 - Section
 - Container
-
 - Header
 
+###### Typography
+
 - Heading
-- Button
+- Paragraph
+
+###### Forms
+
 - Input
-- Textarea
+- TextArea
 - Select
 - Checkbox
 - Radio
+- Button

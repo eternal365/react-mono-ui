@@ -1,7 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import { Button, Checkbox, Container, Header, Heading, Input, Radio, Section, Select, TextArea } from 'components';
+import {
+  Button,
+  Checkbox,
+  Container,
+  Header,
+  Heading,
+  Input,
+  Paragraph,
+  Radio,
+  Section,
+  Select,
+  TextArea,
+} from 'components';
 import { Ui } from 'contexts';
 
 const root = ReactDOM.createRoot(
@@ -15,6 +27,7 @@ root.render(
       <Section>
         <Container>
           <Heading>welcome to mono ui!</Heading>
+          <Paragraph>here is a demo of the components.</Paragraph>
           <Input placeholder="input placeholder example" />
           <TextArea placeholder="textarea placeholder example" />
           <Select>
@@ -30,12 +43,12 @@ root.render(
               <Select.Option>option example #7</Select.Option>
             </Select.Group>
           </Select>
-          <Checkbox>checkbox #1</Checkbox>
-          <Checkbox>checkbox #2</Checkbox>
-          <Checkbox>checkbox #3</Checkbox>
-          <Radio name="radio">radio #1</Radio>
-          <Radio name="radio">radio #2</Radio>
-          <Radio name="radio">radio #3</Radio>
+          <Checkbox>checkbox example #1</Checkbox>
+          <Checkbox>checkbox example #2</Checkbox>
+          <Checkbox>checkbox example #3</Checkbox>
+          <Radio name="radio">radio example #1</Radio>
+          <Radio name="radio">radio example #2</Radio>
+          <Radio name="radio">radio example #3</Radio>
           <Button>button example</Button>
           <Button outlined>outlined button example</Button>
         </Container>
