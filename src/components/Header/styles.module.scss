@@ -26,10 +26,10 @@
   line-height: 1em;
   color: $color-dark;
   border-radius: $border-radius;
-  margin-right: -$container-padding;
-  margin-left: -$container-padding;
-  padding-right: $container-padding;
-  padding-left: $container-padding;
+  margin-right: -$container-padding / 2;
+  margin-left: -$container-padding / 2;
+  padding-right: $container-padding / 2;
+  padding-left: $container-padding / 2;
 
   &:focus {
     outline: $border;

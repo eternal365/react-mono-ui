@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import { Button, Container, Header, Heading, Input, Section, Select, TextArea } from 'components';
+import { Button, Checkbox, Container, Header, Heading, Input, Section, Select, TextArea } from 'components';
 import { Ui } from 'contexts';
 
 const root = ReactDOM.createRoot(
@@ -30,6 +30,9 @@ root.render(
               <Select.Option>option example #7</Select.Option>
             </Select.Group>
           </Select>
+          <Checkbox>checkbox #1</Checkbox>
+          <Checkbox>checkbox #2</Checkbox>
+          <Checkbox>checkbox #3</Checkbox>
           <Button>button example</Button>
           <Button outlined>outlined button example</Button>
         </Container>

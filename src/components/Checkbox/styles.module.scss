@@ -1,0 +1,66 @@
+@import "styles/shared";
+
+.root {
+  position: relative;
+
+  & + & {
+    margin-top: $container-padding / 2;
+  }
+}
+
+.input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.label {
+  $box-size: 24px;
+  $tick-width: $box-size / 4;
+  $tick-height: $box-size / 2;
+
+  display: flex;
+  align-items: center;
+  min-height: $box-size;
+  line-height: 1.5em;
+  padding-left: $box-size + $container-padding / 2;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    width: $box-size;
+    height: $box-size;
+    border: $border;
+    border-radius: $border-radius;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .input:focus + &:before {
+    outline: $border;
+  }
+
+  &:after {
+    content: "";
+    width: $tick-width;
+    height: $tick-height;
+    border-right: $border;
+    border-bottom: $border;
+    margin-top: -$tick-height / 2;
+    margin-left: -$tick-width / 2;
+    position: absolute;
+    top: $box-size / 2;
+    left: $box-size / 2;
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+
+  .input:checked + &:after {
+    opacity: 1;
+  }
+}

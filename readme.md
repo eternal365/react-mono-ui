@@ -4,11 +4,14 @@ This project is a component library for React.
 
 ### Components
 
-- Button
-- Container
-- Header
-- Heading
-- Input
 - Section
-- Select
+- Container
+
+- Header
+
+- Heading
+- Button
+- Input
 - Textarea
+- Select
+- Checkbox
